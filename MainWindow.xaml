@@ -1,0 +1,128 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90*" Name="ChoiseWindow"></ColumnDefinition>
+            <ColumnDefinition Width="1*" Name="FirstWindow"></ColumnDefinition>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+            <ColumnDefinition Width="157*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="18*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.RowSpan="3" >
+            <Expander Header="Компания" Width="176"  Height="964" HorizontalAlignment="Left" RenderTransformOrigin="0.503,0.501">
+
+                <StackPanel Background="LightGray">
+                    <RadioButton Content ="Лнит" IsChecked="True" />
+                    <RadioButton Content="СКБ Контур"/>
+                    <RadioButton Content="Ростех"/>
+                    <RadioButton Content="Ростелеком"/>
+                    <RadioButton Content="Cisco"/>
+                    <RadioButton Content="Asbis"/>
+                    <RadioButton Content ="Лнит" />
+                    <RadioButton Content="СКБ Контур"/>
+                    <RadioButton Content="Ростех"/>
+                    <RadioButton Content="Ростелеком"/>
+                    <RadioButton Content="Cisco"/>
+                    <RadioButton Content="Asbis"/>
+                    <RadioButton Content ="Лнит" />
+                    <RadioButton Content="СКБ Контур"/>
+                    <RadioButton Content="Ростех"/>
+                    <RadioButton Content="Ростелеком"/>
+                    <RadioButton Content="Cisco"/>
+                    <RadioButton Content="Asbis"/>
+                    <RadioButton Content ="Лнит" />
+                    <RadioButton Content="СКБ Контур"/>
+                    <RadioButton Content="Ростех"/>
+                    <RadioButton Content="Ростелеком"/>
+                    <RadioButton Content="Cisco"/>
+                    <RadioButton Content="Asbis"/>
+
+
+                </StackPanel>
+
+
+
+            </Expander>
+
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="5">
+
+            <GroupBox Header="Компиляторы" HorizontalAlignment="Left" Width="619" Height="170">
+
+                <StackPanel>
+                    <CheckBox Content="Visual Studio" IsChecked="True"></CheckBox>
+                    <CheckBox Content="Visual Studio Code"></CheckBox>
+                    <CheckBox Content="XCode"></CheckBox>
+                    <CheckBox Content="PyCharm"></CheckBox>
+                    <CheckBox Content="Spyder"></CheckBox>
+                    <CheckBox Content="Pydev" IsChecked="True"></CheckBox>
+                    <CheckBox Content="Code Blocks"></CheckBox>
+                    <CheckBox Content="Dev C++"></CheckBox>
+                </StackPanel>
+
+
+
+            </GroupBox>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Width="200">
+            <Button x:Name="send_button" Content="Сохранить выбор" Background="#8E9F60" HorizontalAlignment="Center" Height="47" Width="200" Foreground="#3D4653" FontFamily="Arial Black"/>
+
+
+        </StackPanel>
+        <StackPanel Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="1" >
+
+            <Button Name="drop_button" Content="Отменить выбор" Background="#FFAF5D44" HorizontalAlignment="Center" Height="47" Width="200" Foreground="#3D4653" FontFamily="Arial Black"></Button>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" Margin="0,1,0,0" >
+
+            <GroupBox>
+                <WrapPanel Margin="5" Orientation="Horizontal">
+                    <CheckBox Content="Администратор баз данных" Margin="3"></CheckBox>
+                    <CheckBox Content="Администратор вычеслительной сети" Margin="3"></CheckBox>
+                    <CheckBox Content="Администратор защиты" Margin="3"></CheckBox>
+                    <CheckBox Content="Аналитик программного обеспечения" Margin="3"></CheckBox>
+                    <CheckBox Content="Архитектор программного обеспечения" Margin="3"></CheckBox>
+                    <CheckBox Content="Ведущий программист" Margin="3"></CheckBox>
+                    <CheckBox Content="Контент менеджер" Margin="3"></CheckBox>
+                    <CheckBox Content="Тестировщик" Margin="3"></CheckBox>
+                    <CheckBox Content="Технический писатель" Margin="3"></CheckBox>
+                    <CheckBox Content="Системный аналитик" Margin="3"></CheckBox>
+                </WrapPanel>
+            </GroupBox>
+
+
+
+
+        </StackPanel>
+
+
+
+    </Grid>
+
+
+</Window>
